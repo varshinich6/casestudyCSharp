@@ -1,10 +1,20 @@
-﻿namespace CarRentalApp.testing
+using casestudy.CarRentalApp;
+using casestudy.DAO;
+using casestudy.models;
+using System.Reflection;
+
+namespace casestudy
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            CarRentalApplication repository = new CarRentalApplication();
+            repository.MainMenu();
+
+
         }
+
     }
 }
